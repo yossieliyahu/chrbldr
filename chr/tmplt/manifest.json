@@ -1,0 +1,35 @@
+{
+	"manifest_version":2,
+
+	"name":"Montiera Chrome Extension",
+	"description":"Work with content script to inject Montiera into every page",
+	"version":"1.0",
+
+	"browser_action": {
+		"default_icon":"icon.png",
+		"default_title":"Montiera Chrome Extension",
+		"default_popup":"popup.html"
+	},
+
+	"background":{
+		"scripts":["background.js","data.js"],
+		"persistent":true
+	},
+
+	
+
+	"content_scripts":[
+			{
+				"matches":["http://*/*","https://*/*"],
+				"js":["cscript.js","jquery-1.10.2.js"],
+				"css":["cscript.css"]
+			}
+		],
+
+	"permissions":[
+		"tabs",
+		"storage",
+		"notifications",
+		"contextMenus"
+	]
+}

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRX Create</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+
+	  <div style="width:500px;padding:100px;">
+		
+			<form>
+				<div class="input-group">
+					<input id="domain" type="text" style="width:300px;" placeholder="Domain (default is mash-pot.com)" />
+				</div>
+				<div class="input-group">
+					<input id="prdct" type="text" style="width:300px;" required placeholder="Product Name" />
+				</div>
+				<div class="input-group">
+					<input id="ep" type="text" style="width:300px;" required placeholder="ep" />
+				</div>
+				<div class="input-group">
+					<input id="epid" type="text" style="width:300px;" required placeholder="epid" />
+				</div>
+				<div class="input-group">
+					<input id="mm" type="text" style="width:300px;" required placeholder="mmprdct" />
+				</div>
+				<br />
+				<input type="submit" class="btn btn-success" value="Create crx" />
+			</form>
+			<br /><br />
+			<label id="errMsg" style="width:300px;height:100px;">ABC</label>
+		
+	  </div>
+	  
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./javascripts/mng.js"></script>
+  </body>
+</html>
